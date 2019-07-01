@@ -9,7 +9,7 @@ tags:
 ---
 
 
-Some examples of patterns are:[^1]
+[Some examples of patterns are:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html)
 
 1. The pattern ex: IOException matches all instances of class  IOException, binding variable ex to the instance.
 2. The pattern Some(x) matches values of the form Some(v), binding x to the argument value v of the Some constructor.
@@ -18,10 +18,10 @@ Some examples of patterns are:[^1]
 5. The pattern 1 | 2 | 3 matches the integers between 1 and 3.
 
 ---
-Variable Patterns:
+[Variable Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#variable-patterns)
 
 >SimplePattern   ::=  ‘_’  
-   |  varid [^2]
+   |  varid 
 
 ```javascript
 import scala.util.Random
@@ -44,7 +44,7 @@ matchTest(3) //res1: String = many
 matchTest(1) //res2: String = one
 ```
 
-Typed Patterns:
+[Typed Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#typed-patterns)
 
 >Pattern1        ::=  varid ‘:’ TypePat  
                     |  ‘_’ ‘:’ TypePat [^3]
@@ -74,9 +74,9 @@ testListType match {
 
 ```
 
-Pattern Binders:
+[Pattern Binders:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#pattern-binders)
 
->Pattern2        ::=  varid ‘@’ Pattern3 [^4]
+>Pattern2        ::=  varid ‘@’ Pattern3 
 
 ```javascript
 /**
@@ -111,9 +111,9 @@ optbinding match {
 
 ```
 
-Literal Patterns:
+[Literal Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#literal-patterns)
 
->SimplePattern   ::=  StableId [^5]  
+>SimplePattern   ::=  StableId   
 
 ```javascript
 val literalPattern: Any = true
@@ -126,7 +126,7 @@ literalPattern match {
 }
 ```
 
-Stable Identifier Patterns:
+[Stable Identifier Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#stable-identifier-patterns)
 
 >SimplePattern   ::=  StableId [^6]
 
@@ -171,7 +171,7 @@ mMatchrefactored("a")
 
 ```
 
-Constructor Patterns:
+[Constructor Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#constructor-patterns)
 
 >SimplePattern   ::=  StableId ‘(’ [Patterns] ‘)’ [^7]
 
@@ -217,9 +217,9 @@ Teacher.unapply(Teacher("Jose Luis",18,"28 feb 1971"))
 
 ```
 
-Tuple Patterns:
+[Tuple Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#tuple-patterns)
 
->SimplePattern   ::=  ‘(’ [Patterns] ‘)’ [^8]
+>SimplePattern   ::=  ‘(’ [Patterns] ‘)’ 
 
 ```javascript
 
@@ -252,9 +252,9 @@ anyObject(ingredient)
 
 ```
 
-Extractor Patterns:
+[Extractor Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#extractor-patterns)
 
->  SimplePattern   ::=  StableId ‘(’ [Patterns] ‘)’ [^9]
+>  SimplePattern   ::=  StableId ‘(’ [Patterns] ‘)’ 
 
 ```javascript
 // For a better understanding of this pattern I recommend to read the following next link:
@@ -305,17 +305,3 @@ def studentOrTeacherUsingExtractors(person: Any): Unit = {
 
 ```
   
-  
-  
-  
-  
-            
-[^1]: Pattern matching scala spec from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html
-[^2]: Variable Patterns from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#variable-patterns
-[^3]: Typed Patterns from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#typed-patterns
-[^4]: Pattern Binders from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#pattern-binders
-[^5]: Literal Patterns from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#literal-patterns
-[^6]: Stable Identifier Patternsfrom https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#stable-identifier-patterns
-[^7]: Constructor Patterns from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#constructor-patterns
-[^8]: Tuple Patterns from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#tuple-patterns
-[^9]: Extractor Patterns from https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#extractor-patterns 

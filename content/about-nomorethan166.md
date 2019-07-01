@@ -10,5 +10,4 @@ The Scala specification can be found at:
 
 * Scala specifications [repos](https://www.scala-lang.org/files/archive/spec/).
 
-So in the previous url you can find all the specifications of Scala.
-The proper version of scala specification is indicated in each post.
+The proper version of scala specification is indicated on each post.
