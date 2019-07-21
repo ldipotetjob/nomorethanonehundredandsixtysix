@@ -47,7 +47,7 @@ matchTest(1) //res2: String = one
 [Typed Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#typed-patterns)
 
 >Pattern1        ::=  varid ‘:’ TypePat  
-                    |  ‘_’ ‘:’ TypePat [^3]
+                    |  ‘_’ ‘:’ TypePat 
 
 ```javascript
 val mystrType: String = "String value for Pattern matching"
@@ -128,7 +128,7 @@ literalPattern match {
 
 [Stable Identifier Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#stable-identifier-patterns)
 
->SimplePattern   ::=  StableId [^6]
+>SimplePattern   ::=  StableId
 
 ```javascript
 def f(x: Int, y: Int) = x match {
@@ -173,7 +173,7 @@ mMatchrefactored("a")
 
 [Constructor Patterns:](https://www.scala-lang.org/files/archive/spec/2.12/08-pattern-matching.html#constructor-patterns)
 
->SimplePattern   ::=  StableId ‘(’ [Patterns] ‘)’ [^7]
+>SimplePattern   ::=  StableId ‘(’ [Patterns] ‘)’
 
 ```javascript
 /**
