@@ -53,9 +53,5 @@ cd $githubblogrepositoryname
  1. The hugo static site will need a binding to a github url page:</br>
     In the[config.toml](https://github.com/ldipotetjob/nomorethanonehundredandsixtysix/blob/master/config.toml) file the key baseURL must have the github url page </br>baseURL = `http(s)://<username>.github.io`
  2. Check that you are on $githubblogrepositoryname and then launch: hugo -d **./\<username>.github.io/**  
- 3.    
-
-
- 
-
-
+ 3. Move to the directory <username>.github.io (directory where have been cloned the github page: `http(s)://<username>.github.io`)
+ 4. Commit and upload the changes to remote and have fun 👍
