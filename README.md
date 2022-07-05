@@ -13,7 +13,7 @@ cd $githubblogrepositoryname
 hugo new site .
 ```
 
-Creating and configuring github repo to store the site previously created
+### Creating and configuring github repo to store the site previously created
 
 ```shell
 cd $githubblogrepositoryname
@@ -31,7 +31,7 @@ git submodule add $git_repository-of-HugoTheme themes/hermit
 # add => ignore = dirty  to .gitmodules file 
 ```
 
-Now let's check if everything went well. Deploy in local
+### Now let's check if everything went well. Deploy in local
 
 ```shell
 hugo server -D 
@@ -41,7 +41,8 @@ hugo server -D
 ####
 ```
 
-If everything went well our next step will be create [the github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).</br>
+### Create [the github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).</br>
+
 Remenber it's format:
 
  `http(s)://<username>.github.io` or `http(s)://<organization>.github.io`
