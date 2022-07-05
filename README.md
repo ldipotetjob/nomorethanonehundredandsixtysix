@@ -49,6 +49,13 @@ git clone https://github.com/<username>/<username>.github.io.git
 cd $githubblogrepositoryname
 ```
  
+### How our Hugo static web site can be deployed on github page 
+ 1. The hugo static site will need a binding to github url page:
+    On [config.toml](https://github.com/ldipotetjob/nomorethanonehundredandsixtysix/blob/master/config.toml) file the key baseURL must have the github url page </br>baseURL = `http(s)://<username>.github.io`
+ 2. 
+ 3.    
+
+
  
 
 
